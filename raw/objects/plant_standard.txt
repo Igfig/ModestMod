@@ -3,35 +3,27 @@ plant_standard
 [OBJECT:PLANT]
 
 [PLANT:MUSHROOM_HELMET_PLUMP]
-	[NAME:plump helmet][NAME_PLURAL:plump helmet fungus][ADJ:plump helmet]
+	[NAME:plump helmet][NAME_PLURAL:plump helmets][ADJ:plump helmet]
 
 	Every plant needs a structural material so that the game knows how it behaves when it's alive.
 
 	Here the material is added to the plant, using a template from the material file.
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
-		(MATERIAL_VALUE:2)												Modest Mod
-		(MATERIAL_REACTION_PRODUCT:DRINK_MAT:LOCAL_PLANT_MAT:DRINK)		Modest Mod
-		(MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED)		Modest Mod
+		[MATERIAL_VALUE:2]
+		[MATERIAL_REACTION_PRODUCT:DRINK_MAT:LOCAL_PLANT_MAT:DRINK]
+		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
 
 	Here the material is marked as the structural material (this could be below the edible tags which come next).  In general, you can use LOCAL_PLANT_MAT|<token>, PLANT_MAT|<plant>|<token>, CREATURE_MAT|<creature>|<token> or INORGANIC|IRON (though the game might hiccup for a while specifically on plants that aren't structurally plants).
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 
 		We also modify it a bit to make the plant edible.  Any token material can be used here to modify the material that was created from the template.
-		(EDIBLE_VERMIN)			Modest Mod
-		(EDIBLE_RAW)			Modest Mod
-		(EDIBLE_COOKED)			Modest Mod
+		[EDIBLE_VERMIN]
+		[EDIBLE_RAW]
+		[EDIBLE_COOKED]
 	[USE_MATERIAL_TEMPLATE:MUSHROOM:MUSHROOM_TEMPLATE]
 		[EDIBLE_VERMIN]
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
-		--- Modest Mod ---
-		[MATERIAL_VALUE:2]
-		[MATERIAL_REACTION_PRODUCT:DRINK_MAT:LOCAL_PLANT_MAT:DRINK]
-		[MATERIAL_REACTION_PRODUCT:SEED_MAT:LOCAL_PLANT_MAT:SEED]
-		[REACTION_CLASS:AM_FRUIT]
-		[STOCKPILE_PLANT_GROWTH]
-		[DISPLAY_COLOR:5:0:0]
-		--- end Modest Mod ---
 	[PICKED_TILE:6][PICKED_COLOR:5:0:0]
 	[GROWDUR:300][VALUE:2]
 
@@ -64,18 +56,10 @@ plant_standard
 	[WET][DRY]
 	[BIOME:SUBTERRANEAN_WATER]
 	[UNDERGROUND_DEPTH:1:3]
-	[SHRUB_TILE:'.']				Modest Mod
+	[SHRUB_TILE:58]
 	[DEAD_SHRUB_TILE:58]
 	[SHRUB_COLOR:5:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
-	--- Modest Mod ---
-	[GROWTH:HELMET]
-		[GROWTH_NAME:plump helmet:plump helmets]
-		[GROWTH_ITEM:PLANT_GROWTH:NONE:LOCAL_PLANT_MAT:MUSHROOM]
-		[GROWTH_DENSITY:1]
-		[GROWTH_HAS_SEED]
-		[GROWTH_PRINT:58:6:5:0:0:ALL:1]
-	--- end Modest Mod ---
 
 [PLANT:GRASS_TAIL_PIG]
 	[NAME:pig tail][NAME_PLURAL:pig tails][ADJ:pig tail]
