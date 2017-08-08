@@ -131,7 +131,7 @@ creature_amphibians
 	[AMBUSHPREDATOR]
 	[MAXAGE:10:11]
 	[CHILD:1]
-	[GENERAL_CHILD_NAME:giant toad tadpole:giant toad tadpoles]
+	[GENERAL_CHILD_NAME:giant toadlet:giant toadlets]
 	--- end Modest Mod ---
 	[GO_TO_END]
 	[PREFSTRING:beauty]

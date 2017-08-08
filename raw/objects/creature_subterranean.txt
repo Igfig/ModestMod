@@ -109,7 +109,7 @@ creature_subterranean
 	[DESCRIPTION:A giant amphibian predator found underground.]
 	[NAME:giant cave toad:giant cave toads:giant cave toad]
 	[CASTE_NAME:giant cave toad:giant cave toads:giant cave toad]
-	[CHILD:1][GENERAL_CHILD_NAME:giant toad tadpole:giant toad tadpoles]	Modest Mod
+	[CHILD:1][GENERAL_CHILD_NAME:giant toadlet:giant toadlet]	Modest Mod
 	[CREATURE_TILE:'T'][COLOR:7:0:0]
 	[PETVALUE:750]
 	[PET_EXOTIC]

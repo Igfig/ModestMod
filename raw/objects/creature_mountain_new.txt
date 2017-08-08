@@ -160,8 +160,11 @@ Wolverines were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:10:20]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'W']
-	[MAXAGE:12:17]			Modest Mod
-	[LARGE_PREDATOR]		Modest Mod
+	--- Modest Mod ---
+	[MAXAGE:12:17]
+	[LARGE_PREDATOR]
+	[TRAINABLE]
+	--- end Modest Mod ---
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]

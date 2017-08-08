@@ -192,7 +192,7 @@ creature_large_tropical
 	[CLUSTER_NUMBER:3:7]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[BIOME:SHRUBLAND_TROPICAL]	
+	[BIOME:SHRUBLAND_TROPICAL]
 	(BENIGN)[MEANDERER][NATURAL]		removed by Modest Mod
 	[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:2TUSKS:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -2801,6 +2801,16 @@ creature_large_tropical
 	[COPY_TAGS_FROM:CAMEL_1_HUMP]
 	[APPLY_CREATURE_VARIATION:GIANT]
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
+	--- Modest Mod ---
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:STATE_NAME]
+		[CVCT_TARGET:one-humped camel]
+		[CVCT_REPLACEMENT:giant one-humped camel]
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:STATE_ADJ]
+		[CVCT_TARGET:one-humped camel]
+		[CVCT_REPLACEMENT:giant one-humped camel]
+	--- end Modest Mod ---
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
 	[MAXAGE:14:20]							Modest Mod
@@ -2978,6 +2988,16 @@ creature_large_tropical
 	[COPY_TAGS_FROM:CAMEL_2_HUMP]
 	[APPLY_CREATURE_VARIATION:GIANT]
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
+	--- Modest Mod ---
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:STATE_NAME]
+		[CVCT_TARGET:two-humped camel]
+		[CVCT_REPLACEMENT:giant two-humped camel]
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:STATE_ADJ]
+		[CVCT_TARGET:two-humped camel]
+		[CVCT_REPLACEMENT:giant two-humped camel]
+	--- end Modest Mod ---
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
 	[MAXAGE:14:20]							Modest Mod
@@ -3443,7 +3463,7 @@ creature_large_tropical
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[GO_TO_START]
 	[NAME:rhinoceros man:rhinoceros men:rhinoceros man]
-	[DESCRIPTION:A person with the head and horns a rhinoceros.]
+	[DESCRIPTION:A person with the head and horns of a rhinoceros.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:60:80]

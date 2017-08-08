@@ -1,4 +1,4 @@
-Modest Mod v0.42.04-1a
+Modest Mod v0.42.06-1
 An indispensable mod for Dwarf Fortress v0.42
 
 By Igfig
@@ -20,9 +20,9 @@ INSTALLATION
 
 COMPATIBILITY
 
-Modest Mod should be compatible with many mods and some texture packs--anything that doesn't change one of the files listed in "Modified raw files" (see below).
+Modest Mod should be compatible with many mods and some texture packs. 
 
-Even if you /have/ modified these files, it's pretty easy to merge things manually. All of my changes are clearly marked in the raw files with the phrase "Modest Mod". Alternatively, use WinMerge (http://winmerge.org)
+Even for mods which are incompatible, it's pretty easy to merge things manually. All of my changes are clearly marked in the raw files with the phrase "Modest Mod". We recommend using WinMerge (http://winmerge.org)
 
 In addition, there exist alternate versions of the Modest Mod intended specifically for use with specific tilesets. Be sure to install Modest Mod AFTER installing the graphics pack of your choice.
 
@@ -30,11 +30,13 @@ MODULES
 
 Modest Modules involve changes that, while popular, are a little too ambitious for the core mod. 
 
-Modules included in release 0.42.04-1 are:
+Modules included in release 0.42.06-1 are:
 	* Accelerated - Significantly reduces the number of materials present in the game, increasing performance.
+	* Everything Is Tameable - With the exception of the civilized races, you can tame anything. Not compatible with Pedestals.
+	* Everything Is Tameable for Accelerated - A version of the Everything Is Tameable module which is compatible with the Accelerated module. Install AFTER Accelerated. Not compatible with Pedestals.
 	* Modest Bodies - Modifies body definitions to add joints between "upper" and "lower" limbs, and renames some body parts - e.g. "upper leg" to "thigh."
-	* Pedestals - Allows you to mount & display crafts, particularly artifacts.
-	* Pedestals for Accelerated - A version of the Pedestals module which is compatible with the Accelerated module. Install AFTER Accelerated.
+	* Pedestals - Allows you to mount & display crafts, particularly artifacts. Not compatible with Everything Is Tameable.
+	* Pedestals for Accelerated - A version of the Pedestals module which is compatible with the Accelerated module. Install AFTER Accelerated. Not compatible with Everything Is Tameable.
 	* Tooltips - Provides descriptions & important information for most Fortress Mode reactions. Likely to be helpful for newbies.
 	* Tooltips for Accelerated - A version of the Tooltips module which is compatible with the Accelerated module. Install AFTER Accelerated.
 	
@@ -48,6 +50,19 @@ MODULE INSTALLATION
 4. Say yes when it asks if you want to replace files.
 
 CHANGELOG
+
+v.42.06-1
+	* Reverted plump helmets to a plant instead of a growth again, as bags are no longer auto-emptied.
+	* Fixed the MM grate creation reactions to use masonry instead of mechanics
+	* Brought the new reptiles in line with other creatures (giant maxages, child names, biting with teeth, etc.)
+	* Fixed long yams being named lesser yams
+	* Removed SPECIFIC_FOOD from panda men and red panda men.
+	* Adjusted the names on giant one-humped camel and giant two-humped camel milk and cheese
+	* Fixed bug #9621 (the plural of "left foot" is no longer "right feet" for certain bipedal creatures)
+	* Fixed bug #9620 (kobolds have an invalid agility range)
+	* Renamed baby toad-variants to "toadlets" instead of "tadpoles"
+	* Fixed new creatures with teeth, and creatures with new teeth, so that they use their teeth to bite
+	* Brought giant foxes & giant wolverines in line with other large carnivorans (large predator, trainable)
 
 v.42.04-1a
 	* Fixed the specific mill to paste reactions, which were consuming seeds without producing paste
@@ -237,6 +252,10 @@ Some fixes from the old Modest Mod were incorporated directly into 0.40.x; they 
 	Because of bugs in the fix itself:
 		* Giant creature age changes have been moved from the GIANT template into the individual creatures, because CV_REPLACE_TAG does not work correctly for numbers.
 
+FOR MOD AUTHORS
+
+The Modest Mod belongs to the Dwarf Fortress community. You are free to remix, build upon, pull from, and otherwise use these raws for any purpose. Attribution is nice, but you don't even have to do that.
+		
 SPECIAL THANKS
 
 Vintermann, for starting the thread that inspired this mod
